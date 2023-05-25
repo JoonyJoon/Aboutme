@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <style>
+        body {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.body.style.opacity = "1";
+        };
+
+        window.onbeforeunload = function() {
+            document.body.style.opacity = "0";
+        };
+    </script>
+
+
+</head>
+<body>
+    <div class="container" id="box1_style">
+        <div class="wrapper">
+            <div class="box1" id="box1_align">
+                <a href="detail.html" data-transition="slide"><img style= "border: 3px solid black"class="img_size" src="./images/joon.png"alt="" /></a>
+                <!-- <img src="http://media.npr.org/assets/news/2009/10/27/facebook1_sq-17f6f5e06d5742d8c53576f7c13d5cf7158202a9.jpg?s=16" alt="" /> -->
+                <div id="container" style="align-items: center">
+                    <p id="name">임창준</p>
+                    <p id="exp">#항상 성장하는</p>
+                    <p id="exp">#클라우드 고수가 되고 싶은</p>
+                    <p id="exp">#꼼꼼한 백엔드 개발자를 희망하는</p>
+                      
+                </div>
+            </div>
+        </div>
+      </div>
+        <div class="box2">
+        </div> 
+    </div>
+</body>
+</html>

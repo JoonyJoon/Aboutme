@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container" id="opt3">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>모달 제목</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
+        </div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>스프링 초보</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="card">
+            <div class="face face1" style="border: 10px solid #f04a87;">
+                <div class="content">
+                    <img id ="img_size" src="./images/strategy.png"/>
+                    <h3>VISION</h3>
+                </div>
+            </div>
+            <div class="face face2" style="text-align: center">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus labore doloribus maxime illo dolorum dignissimos explicabo, </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1" style="border: 10px solid #e877a0;">
+                <div class="content">
+                    <img id ="img_size" src="./images/strategy.png"/>
+                    <h3>AS-IS</h3>
+                </div>
+            </div>
+            <div class="face face2" style="text-align: center">
+                <div class="content">
+                    <a href="#" id="myLink"># 백준 실버</a>
+                    <a href="#" id="myLink2"># 스프링 초보</a>
+                    <a href="#"># 백준 실버</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1" style="border: 10px solid #feac65bf;">
+                <div class="content">
+                    <img id ="img_size"  src="./images/strategy.png"/>
+                    <h3>TO-BE</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <a href="#"># 백준 플레</a>
+                    <a href="#"># 백준 플레</a>
+                    <a href="#"># 대기업 개발자</a>
+                    <a href="#"># 억대 연봉</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1" style="border: 10px solid #ffe98a;">
+                <div class="content">
+                    <img id ="img_size"  src="./images/strategy.png"/>
+                    <h3>PLAN</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus labore doloribus maxime illo dolorum dignissimos explicabo, </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("myLink").addEventListener("click", function (event) {
+        event.preventDefault(); // 기본 동작인 페이지 이동을 막습니다
+        document.getElementById("myModal").style.display = "block";
+      });
+      
+      // 모달 닫기 버튼을 클릭할 때 모달을 숨깁니다
+      document
+        .getElementsByClassName("close")[0]
+        .addEventListener("click", function () {
+          document.getElementById("myModal").style.display = "none";
+        });
+        // 두 번째 모달 열기
+        document.getElementById("myLink2").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("myModal2").style.display = "block";
+        });
+    
+        // 두 번째 모달 닫기
+        document.getElementsByClassName("close")[1].addEventListener("click", function () {
+            document.getElementById("myModal2").style.display = "none";
+        });
+</script>
+</body>
+</html>

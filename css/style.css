@@ -1,0 +1,234 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  /* background-color: #eee; */
+  /* background: #845ec2; */
+  background: linear-gradient(to right, #ffe98a, #f04a87);
+  /* border: 1px solid #222; */
+  justify-content: center;
+  /* align-items: center; */
+}
+#opt3 {
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #845ec2;
+  /* background: linear-gradient(to right, #d74177, #ffe98a); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  flex-direction: column;
+}
+
+/* .box1 {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+} */
+.box1 {
+  margin-top: 50px;
+  width: 20vw;
+  height: 45vh;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 10px #31c5d7;
+  transition: width 2s, background-color 1s, box-shadow 1s;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+}
+
+.box1:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img_size {
+  margin-top: 15px;
+  border: 10px solid black;
+  border-radius: 50%;
+  width: 10vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #d74177, #ffe98a);
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+#name {
+  font-size: 24px;
+}
+
+#box1_style {
+  background: linear-gradient(to right, #d74177, #ffe98a);
+  align-items: center;
+}
+#box2_style {
+  background: linear-gradient(to right, #2f7fda, #43c937);
+  align-items: center;
+}
+
+.box3 {
+  padding-left: 10%;
+  padding-right: 10%;
+  /* width: 100vw; */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box3 .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.box3 .card .face {
+  width: 250px;
+  height: 200px;
+  transition: 0.5s;
+  border-radius: 25px;
+}
+
+.box3 .card .face.face1 {
+  position: relative;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  text-align: center;
+}
+
+.box3 .card:hover .face.face1 {
+  background: #ff6f91;
+  transform: translateY(0);
+}
+
+.box3 .card .face.face1 .content {
+  opacity: 0.8;
+  transition: 0.8s;
+}
+
+.box3 .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.box3 .card:hover .face.face1 .content img {
+  max-width: 100px;
+}
+.box3 .card:hover .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.box3 .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 50px 5px rgba(252, 251, 251, 0.8);
+  transform: translateY(-100px);
+}
+
+.box3 .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.box3 .card:hover .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+}
+.box3 .card:hover .face.face2 .content a {
+  margin: 10px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 3px;
+  border: 1px solid #333;
+}
+
+.box3 .card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
+}
+
+#img_size {
+  width: 10vh;
+}
+
+/* modal 스타일 */
+.modal {
+  display: none; /* 초기에는 숨김 상태로 설정 */
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  /* left: 0;
+  top: 0; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경을 어둡게 */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
