@@ -13,58 +13,104 @@
 
 <body>
   <div class="container" id="opt3">
-    <div id="myModal" class="modal">
+    <!-- favorite modal -->
+    <div id="exercise" class="modal">
+        <div class="modal-content" style="text-align: center;">
+          <span class="close"></span>
+          <h2>헬스</h2>
+          <img src="./images/weight.png" class="img_size2"/>
+        </div>
+        <div class="modal-content" style="text-align: center;">
+          <h2>수영</h2>
+          <img src="./images/swim.png" class="img_size2"/>
+        </div>
+        <div class="modal-content" style="text-align: center;">
+        <h2>볼링</h2>
+        <img src="./images/balling.png" class="img_size2"/>
+        </div>
+      </div>
+      <div id="activity" class="modal">
+        <div class="modal-content" style="text-align: center;">
+            <span class="close">&times;</span>
+            <h2>스프링 초보</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
+        </div>
+    </div>
+    <div id="movie" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <h2>모달 제목</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
         </div>
       </div>
-      <div id="myModal2" class="modal">
+      <div id="travel" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>스프링 초보</h2>
+            <h2>카카오 클라우드 스쿨</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
         </div>
     </div>
+    <!-- AS-IS modal -->
+    <div id="project" class="modal">
+        <div class="modal-content" style="text-align: center;">
+          <span class="close">&times;</span>
+          <h2>서버리스 컴퓨팅 환경을 통한 서비스 개발</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
+        </div>
+    </div>
+    <div id="kakao" class="modal">
+        <div class="modal-content2" style="text-align: center;">
+            <span class="close">&times;</span>
+            <h2>카카오 클라우드 스쿨</h2>
+            <img src="./images/kakao.png" class="img_size3"/>
+        </div>
+    </div>
+
+    <!-- TO-BE modal -->
+
+    <!-- PLAN 모달 -->
     <div class="box3">
         <div class="card">
             <div class="face face1" style="border: 10px solid #f04a87;">
                 <div class="content">
-                    <img id ="img_size" src="./images/strategy.png"/>
-                    <h3>VISION</h3>
+                    <!-- <img id ="img_size" src="./images/strategy.png"/> -->
+                    <img id ="img_size" src="./images/favorite.png"/>
+                    <h3>FAVORITE</h3>
                 </div>
             </div>
             <div class="face face2" style="text-align: center">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus labore doloribus maxime illo dolorum dignissimos explicabo, </p>
-                    <a href="#">Read More</a>
+                    <a href="#" id="exerciseLink">#운동</a>
+                    <a href="#" id="activityLink">#액티비티 활동</a><br>
+                    <a href="#" id="movieLink">#영화감상</a>
+                    <a href="#" id="travelLink">#여행</a>
                 </div>
             </div>
         </div>
         <div class="card">
             <div class="face face1" style="border: 10px solid #e877a0;">
                 <div class="content">
-                    <img id ="img_size" src="./images/strategy.png"/>
+                    <img id ="img_size" src="./images/as-is.png"/>
                     <h3>AS-IS</h3>
                 </div>
             </div>
-            <div class="face face2" style="text-align: center">
+            <div class="face face2" style="text-align: center;">
                 <div class="content">
                     <a href="#" id="myLink"># 백준 실버</a>
                     <a href="#" id="myLink2"># 스프링 초보</a>
-                    <a href="#"># 백준 실버</a>
+                    <a href="#" id="projectLink"># 진행했던 프로젝트</a>
+                    <a href="#" id="kakaoLink"># 카카오 클라우드 스쿨</a>
                 </div>
             </div>
         </div>
         <div class="card">
             <div class="face face1" style="border: 10px solid #feac65bf;">
                 <div class="content">
-                    <img id ="img_size"  src="./images/strategy.png"/>
+                    <img id ="img_size"  src="./images/to-be.png"/>
                     <h3>TO-BE</h3>
                 </div>
             </div>
-            <div class="face face2">
+            <div class="face face2" style="text-align: center;">
                 <div class="content">
                     <a href="#"># 백준 플레</a>
                     <a href="#"># 백준 플레</a>
@@ -76,41 +122,64 @@
         <div class="card">
             <div class="face face1" style="border: 10px solid #ffe98a;">
                 <div class="content">
-                    <img id ="img_size"  src="./images/strategy.png"/>
+                    <img id ="img_size"  src="./images/plan.png"/>
                     <h3>PLAN</h3>
                 </div>
             </div>
-            <div class="face face2">
+            <div class="face face2" style="text-align: center;">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus labore doloribus maxime illo dolorum dignissimos explicabo, </p>
+                    <a href="#" id="kakaoLink"># 카카오 클라우드 스쿨</a>
                     <a href="#">Read More</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script>
-    document.getElementById("myLink").addEventListener("click", function (event) {
-        event.preventDefault(); // 기본 동작인 페이지 이동을 막습니다
-        document.getElementById("myModal").style.display = "block";
-      });
-      
-      // 모달 닫기 버튼을 클릭할 때 모달을 숨깁니다
-      document
-        .getElementsByClassName("close")[0]
-        .addEventListener("click", function () {
-          document.getElementById("myModal").style.display = "none";
-        });
-        // 두 번째 모달 열기
-        document.getElementById("myLink2").addEventListener("click", function (event) {
-            event.preventDefault();
-            document.getElementById("myModal2").style.display = "block";
-        });
-    
-        // 두 번째 모달 닫기
-        document.getElementsByClassName("close")[1].addEventListener("click", function () {
-            document.getElementById("myModal2").style.display = "none";
-        });
-</script>
 </body>
+<script>
+    function addModalEventListeners(linkId, modalId) {
+      document.getElementById(linkId).addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById(modalId).style.display = "flex";
+      });
+    
+      document.querySelector(`#${modalId} .close`).addEventListener("click", function () {
+        document.getElementById(modalId).style.display = "none";
+      });
+    }
+    
+    // 모달 외부 클릭 시 닫히도록 수정
+    window.addEventListener("click", function (event) {
+      const modals = document.getElementsByClassName("modal");
+      for (let i = 0; i < modals.length; i++) {
+        if (event.target === modals[i]) {
+          modals[i].style.display = "none";
+          break;
+        }
+      }
+    });
+    
+    // 추가: 모달 내부를 클릭해도 모달이 닫히지 않도록 처리
+    const modalContents = document.getElementsByClassName("modal-content");
+    for (let i = 0; i < modalContents.length; i++) {
+      modalContents[i].addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
+    }
+    
+    
+    //favorite
+    addModalEventListeners("exerciseLink", "exercise");
+    addModalEventListeners("activityLink", "activity");
+    addModalEventListeners("movieLink", "movie");
+    addModalEventListeners("travelLink", "travel");
+    addModalEventListeners("kakaoLink", "kakao");
+    // AS-IS
+    addModalEventListeners("projectLink", "project");
+    addModalEventListeners("kakaoLink", "kakao");
+
+    // TO-BE
+
+    // PLAN
+</script>
 </html>

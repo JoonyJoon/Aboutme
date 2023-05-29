@@ -61,10 +61,18 @@ body {
 }
 
 .img_size {
-  margin-top: 15px;
+  margin-top: 50px;
   border: 10px solid black;
   border-radius: 50%;
   width: 10vw;
+}
+
+.img_size2 {
+  width: 25vw;
+  height: 25vw;
+}
+.img_size3 {
+  width: 50vw;
 }
 
 a {
@@ -96,18 +104,57 @@ a {
   align-items: center;
 }
 
-.box3 {
+/* .box3 {
   padding-left: 10%;
   padding-right: 10%;
-  /* width: 100vw; */
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+.box3 .card {
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .box3 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+} */
+
+.box3 {
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box3 .card {
   position: relative;
   cursor: pointer;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+  .box3 {
+    flex-wrap: nowrap;
+  }
+
+  .box3 .card {
+    width: auto;
+    flex-basis: calc(50% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .box3 .card:nth-child(even) {
+    margin-right: 0;
+  }
 }
 
 .box3 .card .face {
@@ -154,6 +201,7 @@ a {
 }
 
 .box3 .card .face.face2 {
+  width: 270px;
   position: relative;
   background: #fff;
   display: flex;
@@ -188,6 +236,43 @@ a {
   color: #fff;
 }
 
+.box3 .card .face.face2 .content a {
+  margin: 10px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 3px;
+  border: 1px solid #333;
+}
+
+.box3 .card .face.face2 .content button {
+  width: auto;
+  margin: 10px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 3px;
+  border: 1px solid #333;
+}
+
+.box3 .card:hover .face.face2 .content button {
+  width: auto;
+  margin: 10px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 3px;
+  border: 1px solid #333;
+}
+
+.box3 .card .face.face2 .content button:hover {
+  background: #333;
+  color: #fff;
+}
+
 #img_size {
   width: 10vh;
 }
@@ -206,7 +291,18 @@ a {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* 배경을 어둡게 */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 배경을 어둡게 */
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-content {
@@ -214,9 +310,28 @@ a {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 30%;
   max-width: 600px;
   border-radius: 10px;
+  animation: slideIn 0.5s ease-in;
+}
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 10px;
+  animation: slideIn 0.5s ease-in;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .close {
