@@ -200,6 +200,115 @@ a {
   font-size: 1.5em;
 }
 
+/* face 5 */
+.box3 .card .face.face5 {
+  position: relative;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  text-align: center;
+}
+
+.box3 .card:hover .face.face5 {
+  background: #e877a0;
+  transform: translateY(0);
+}
+
+.box3 .card .face.face5 .content {
+  opacity: 0.8;
+  transition: 0.8s;
+}
+
+.box3 .card:hover .face.face5 .content {
+  opacity: 1;
+}
+
+.box3 .card:hover .face.face5 .content img {
+  max-width: 100px;
+}
+.box3 .card:hover .face.face5 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+/* face 3 */
+.box3 .card .face.face3 {
+  position: relative;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  text-align: center;
+}
+
+.box3 .card:hover .face.face3 {
+  background: #feac65bf;
+  transform: translateY(0);
+}
+
+.box3 .card .face.face3 .content {
+  opacity: 0.8;
+  transition: 0.8s;
+}
+
+.box3 .card:hover .face.face3 .content {
+  opacity: 1;
+}
+
+.box3 .card:hover .face.face3 .content img {
+  max-width: 100px;
+}
+.box3 .card:hover .face.face3 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+/* face 4 */
+.box3 .card .face.face4 {
+  position: relative;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  text-align: center;
+}
+
+.box3 .card:hover .face.face4 {
+  background: #ffe98a;
+  transform: translateY(0);
+}
+
+.box3 .card .face.face4 .content {
+  opacity: 0.8;
+  transition: 0.8s;
+}
+
+.box3 .card:hover .face.face4 .content {
+  opacity: 1;
+}
+
+.box3 .card:hover .face.face4 .content img {
+  max-width: 100px;
+}
+.box3 .card:hover .face.face4 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 .box3 .card .face.face2 {
   width: 270px;
   position: relative;
@@ -324,6 +433,15 @@ a {
   border-radius: 10px;
   animation: slideIn 0.5s ease-in;
 }
+.modal-content3 {
+  background-color: #000;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 10px;
+  animation: slideIn 0.5s ease-in;
+}
 
 @keyframes slideIn {
   from {
@@ -346,4 +464,85 @@ a {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* carousel css */
+
+#carousel {
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+.buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
 }
