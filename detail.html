@@ -1,275 +1,314 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css"
+    />
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  </head>
 
-</head>
-
-<body>
-  <div class="container" id="opt3">
-    <!-- favorite modal -->
-    <div id="exercise" class="modal">
-        <div class="modal-content" style="text-align: center;">
+  <body>
+    <div class="container" id="opt3">
+      <!-- favorite modal -->
+      <div id="exercise" class="modal">
+        <div class="modal-content" style="text-align: center">
           <span class="close"></span>
           <h2>헬스</h2>
-          <img src="./images/weight.png" class="img_size2"/>
+          <img src="./images/weight.png" class="img_size2" />
         </div>
-        <div class="modal-content" style="text-align: center;">
+        <div class="modal-content" style="text-align: center">
           <h2>수영</h2>
-          <img src="./images/swim.png" class="img_size2"/>
+          <img src="./images/swim.png" class="img_size2" />
         </div>
-        <div class="modal-content" style="text-align: center;">
-        <h2>볼링</h2>
-        <img src="./images/balling.png" class="img_size2"/>
+        <div class="modal-content" style="text-align: center">
+          <h2>볼링</h2>
+          <img src="./images/balling.png" class="img_size2" />
         </div>
       </div>
       <div id="activity" class="modal">
-        <div class="modal-content" style="text-align: center;">
-            <span class="close">&times;</span>
-            <h2>스프링 초보</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
-        </div>
-    </div>
-    <div id="movie" class="modal">
+        <div class="modal-content-1" style="text-align: center">
+            <span class="close"></span>
+            <h2 style="color: white;">서핑</h2>
+            <!-- <img src="./images/surf.jpg" class="img_size2" /> -->
+          </div>
+          <div class="modal-content-2" style="text-align: center">
+            <h2 style="color: white;">스노우보드</h2>
+            <!-- <img src="./images/boarding.JPG" class="img_size2" /> -->
+          </div>
+      </div>
+      <div id="movie" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <h2>모달 제목</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+            obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni
+            beatae, assumenda ducimus facilis cum incidunt accusantium aperiam
+            numquam dolor illum nisi optio.
+          </p>
         </div>
       </div>
       <div id="travel" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>카카오 클라우드 스쿨</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p>
-        </div>
-    </div>
-    <!-- AS-IS modal -->
-    <div id="project" class="modal">
-        <div class="modal-conten" style="text-align: center;">
           <span class="close">&times;</span>
-          <!-- <h2>서버리스 컴퓨팅 환경을 통한 서비스 개발</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni beatae, assumenda ducimus facilis cum incidunt accusantium aperiam numquam dolor illum nisi optio.</p> -->
-          <div id="carousel">
+          <h2>카카오 클라우드 스쿨</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+            obcaecati, corrupti soluta, sequi quaerat ipsam voluptas magni
+            beatae, assumenda ducimus facilis cum incidunt accusantium aperiam
+            numquam dolor illum nisi optio.
+          </p>
+        </div>
+      </div>
+      <!-- AS-IS modal -->
+      <div id="project" class="modal">
+        <div class="modal-content2" style="text-align: center">
+          <span class="close">&times;</span>
+          <h2>서버리스 기반 컴퓨팅 환경 구축 및 함수개발</h2>
+          <!-- <div>
+                <img src="./images/project.png" class="img_size4">
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+            </div> -->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <img
+                src="./images/project.png"
+                style="
+                  width: 40vw;
+                  height: 500px;
+                  border: 5px solid #000;
+                  border-radius: 5%;
+                "
+              />
+            </div>
 
-            <div class="hideLeft">
-             <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
-           </div>
-     
-           <div class="prevLeftSecond">
-             <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-           </div>
-     
-           <div class="prev">
-             <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-           </div>
-     
-           <div class="selected">
-             <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-           </div>
-     
-           <div class="next">
-             <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-           </div>
-     
-           <div class="nextRightSecond">
-             <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-           </div>
-     
-           <div class="hideRight">
-             <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-           </div>
-     
-         </div>
-     
-        </div>
-    </div>
-    <div id="kakao" class="modal">
-        <div class="modal-content2" style="text-align: center;">
-            <span class="close">&times;</span>
-            <h2>카카오 클라우드 스쿨</h2>
-            <img src="./images/kakao.png" class="img_size3"/>
-        </div>
-    </div>
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">2 / 3</div> -->
+              <img
+                src="./images/project2.png"
+                style="
+                  width: 40vw;
+                  height: 500px;
+                  border: 5px solid #000;
+                  border-radius: 5%;
+                "
+              />
+            </div>
 
-    <!-- TO-BE modal -->
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">3 / 3</div> -->
+              <img
+                src="/images/project3.png"
+                style="
+                  width: 40vw;
+                  height: 500px;
+                  border: 5px solid #000;
+                  border-radius: 5%;
+                "
+              />
+            </div>
+          </div>
+          <br />
 
-    <!-- PLAN 모달 -->
-    <div class="box3">
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <h3>React.js Node.js Docker Kubernetes OpenFaas PostgreSQL</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat
+          </p>
+        </div>
+      </div>
+      <div id="kakao" class="modal">
+        <div class="modal-content2" style="text-align: center">
+          <span class="close">&times;</span>
+          <h2>카카오 클라우드 스쿨</h2>
+          <img src="./images/kakao.jpg" class="img_size3" />
+        </div>
+      </div>
+
+      <!-- TO-BE modal -->
+      <div id="five" class="modal">
+        <div class="modal-content4" style="text-align: center">
+          <span class="close">&times;</span>
+        </div>
+      </div>
+      <div id="ten" class="modal">
+        <div class="modal-content5" style="text-align: center">
+          <img id="myImage" src="./images/ten1.png" style="width: 50vw; height: 60vh" />
+          <span class="close">&times;</span>
+        </div>
+      </div>
+      <!-- PLAN 모달 -->
+      <div class="box3">
         <div class="card">
-            <div class="face face1" style="border: 10px solid #f04a87;">
-                <div class="content">
-                    <!-- <img id ="img_size" src="./images/strategy.png"/> -->
-                    <img id ="img_size" src="./images/favorite.png"/>
-                    <h3>FAVORITE</h3>
-                </div>
+          <div class="face face1" style="border: 10px solid #f04a87">
+            <div class="content">
+              <!-- <img id ="img_size" src="./images/strategy.png"/> -->
+              <img id="img_size" src="./images/favorite.png" />
+              <h3>FAVORITE</h3>
             </div>
-            <div class="face face2" style="text-align: center">
-                <div class="content">
-                    <a href="#" id="exerciseLink">#운동</a>
-                    <a href="#" id="activityLink">#액티비티 활동</a><br>
-                    <a href="#" id="movieLink">#영화감상</a>
-                    <a href="#" id="travelLink">#여행</a>
-                </div>
+          </div>
+          <div class="face face2" style="text-align: center">
+            <div class="content">
+              <a href="#" id="exerciseLink">#운동</a>
+              <a href="#" id="activityLink">#액티비티 활동</a><br />
+              <a href="#" id="movieLink">#영화감상</a>
+              <a href="#" id="travelLink">#여행</a>
             </div>
+          </div>
         </div>
         <div class="card">
-            <div class="face face5" style="border: 10px solid #e877a0;">
-                <div class="content">
-                    <img id ="img_size" src="./images/as-is.png"/>
-                    <h3>AS-IS</h3>
-                </div>
+          <div class="face face5" style="border: 10px solid #e877a0">
+            <div class="content">
+              <img id="img_size" src="./images/as-is.png" />
+              <h3>AS-IS</h3>
             </div>
-            <div class="face face2" style="text-align: center;">
-                <div class="content">
-                    <a href="#" id="myLink"># 백준 실버</a>
-                    <a href="#" id="myLink2"># 스프링 초보</a>
-                    <a href="#" id="projectLink"># 진행했던 프로젝트</a>
-                    <a href="#" id="kakaoLink"># 카카오 클라우드 스쿨</a>
-                </div>
+          </div>
+          <div class="face face2" style="text-align: center">
+            <div class="content">
+              <a href="#" id="myLink"># 백준 실버골드</a>
+              <a href="#" id="myLink"># 취업 준비생</a>
+              <a href="#" id="projectLink"># 최근 진행했던 프로젝트</a>
+              <a href="#" id="kakaoLink"># 카카오 클라우드 스쿨</a>
             </div>
+          </div>
         </div>
         <div class="card">
-            <div class="face face3" style="border: 10px solid #feac65bf;">
-                <div class="content">
-                    <img id ="img_size"  src="./images/to-be.png"/>
-                    <h3>TO-BE</h3>
-                </div>
+          <div class="face face3" style="border: 10px solid #feac65bf">
+            <div class="content">
+              <img id="img_size" src="./images/to-be.png" />
+              <h3>TO-BE</h3>
             </div>
-            <div class="face face2" style="text-align: center;">
-                <div class="content">
-                    <a href="#"># 백준 플레</a>
-                    <a href="#"># 백준 플레</a>
-                    <a href="#"># 대기업 개발자</a>
-                    <a href="#"># 억대 연봉</a>
-                </div>
+          </div>
+          <div class="face face2" style="text-align: center">
+            <div class="content">
+              <a href="#" id="fiveLink"># 5년 뒤</a>
+              <a href="#" id="tenLink"># 10년 뒤</a>
             </div>
+          </div>
         </div>
         <div class="card">
-            <div class="face face4" style="border: 10px solid #ffe98a;">
-                <div class="content">
-                    <img id ="img_size"  src="./images/plan.png"/>
-                    <h3>PLAN</h3>
-                </div>
+          <div class="face face4" style="border: 10px solid #ffe98a">
+            <div class="content">
+              <img id="img_size" src="./images/plan.png" />
+              <h3>PLAN</h3>
             </div>
-            <div class="face face2" style="text-align: center;">
-                <div class="content">
-                    <a href="#" id="kakaoLink"># 카카오 클라우드 스쿨</a>
-                    <a href="#">Read More</a>
-                </div>
+          </div>
+          <div class="face face2" style="text-align: center">
+            <div class="content">
+              <a href="#"># 1일 3알고리즘 풀기</a>
+              <a href="#"># 카카오 클라우드 스쿨<br />성공적으로 수료하기</a
+              ><br />
+              <a href="#"># 취업</a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<script>
-    function addModalEventListeners(linkId, modalId) {
-      document.getElementById(linkId).addEventListener("click", function (event) {
-        event.preventDefault();
-        document.getElementById(modalId).style.display = "flex";
-      });
-    
-      document.querySelector(`#${modalId} .close`).addEventListener("click", function () {
-        document.getElementById(modalId).style.display = "none";
-      });
-    }
-    
-    // 모달 외부 클릭 시 닫히도록 수정
-    window.addEventListener("click", function (event) {
-      const modals = document.getElementsByClassName("modal");
-      for (let i = 0; i < modals.length; i++) {
-        if (event.target === modals[i]) {
-          modals[i].style.display = "none";
-          break;
-        }
+    <script>
+      function addModalEventListeners(linkId, modalId) {
+        document
+          .getElementById(linkId)
+          .addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById(modalId).style.display = "flex";
+          });
+
+        document
+          .querySelector(`#${modalId} .close`)
+          .addEventListener("click", function () {
+            document.getElementById(modalId).style.display = "none";
+          });
       }
-    });
-    
-    // 추가: 모달 내부를 클릭해도 모달이 닫히지 않도록 처리
-    const modalContents = document.getElementsByClassName("modal-content");
-    for (let i = 0; i < modalContents.length; i++) {
-      modalContents[i].addEventListener("click", function (event) {
-        event.stopPropagation();
+
+      // 모달 외부 클릭 시 닫히도록 수정
+      window.addEventListener("click", function (event) {
+        const modals = document.getElementsByClassName("modal");
+        for (let i = 0; i < modals.length; i++) {
+          if (event.target === modals[i]) {
+            modals[i].style.display = "none";
+            break;
+          }
+        }
       });
-    }
-    
-    
-    //favorite
-    addModalEventListeners("exerciseLink", "exercise");
-    addModalEventListeners("activityLink", "activity");
-    addModalEventListeners("movieLink", "movie");
-    addModalEventListeners("travelLink", "travel");
-    addModalEventListeners("kakaoLink", "kakao");
-    // AS-IS
-    addModalEventListeners("projectLink", "project");
-    addModalEventListeners("kakaoLink", "kakao");
 
-    // TO-BE
+      // 추가: 모달 내부를 클릭해도 모달이 닫히지 않도록 처리
+      const modalContents = document.getElementsByClassName("modal-content");
+      for (let i = 0; i < modalContents.length; i++) {
+        modalContents[i].addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+      }
 
-    // PLAN
+      //favorite
+      addModalEventListeners("exerciseLink", "exercise");
+      addModalEventListeners("activityLink", "activity");
+      addModalEventListeners("movieLink", "movie");
+      addModalEventListeners("travelLink", "travel");
+      addModalEventListeners("kakaoLink", "kakao");
+      // AS-IS
+      addModalEventListeners("projectLink", "project");
+      addModalEventListeners("kakaoLink", "kakao");
 
+      // TO-BE
+      addModalEventListeners("fiveLink", "five");
+      addModalEventListeners("tenLink", "ten");
+      // PLAN
 
-    // carousel
-    function moveToSelected(element) {
+      // carousel
+      let slideIndex = 1;
+      showSlides(slideIndex);
 
-        if (element == "next") {
-            var selected = $(".selected").next();
-        } else if (element == "prev") {
-            var selected = $(".selected").prev();
-        } else {
-            var selected = element;
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
         }
-        
-        var next = $(selected).next();
-        var prev = $(selected).prev();
-        var prevSecond = $(prev).prev();
-        var nextSecond = $(next).next();
-        
-        $(selected).removeClass().addClass("selected");
-        
-        $(prev).removeClass().addClass("prev");
-        $(next).removeClass().addClass("next");
-        
-        $(nextSecond).removeClass().addClass("nextRightSecond");
-        $(prevSecond).removeClass().addClass("prevLeftSecond");
-        
-        $(nextSecond).nextAll().removeClass().addClass('hideRight');
-        $(prevSecond).prevAll().removeClass().addClass('hideLeft');
-    }
-    
-    // Eventos teclado
-    $(document).keydown(function(e) {
-        switch(e.which) {
-            case 37: // left
-                moveToSelected('prev');
-                break;
-    
-            case 39: // right
-                moveToSelected('next');
-                break;
-    
-            default: return;
+        if (n < 1) {
+          slideIndex = slides.length;
         }
-        e.preventDefault();
-    });
-    
-    $('#carousel div').click(function() {
-        moveToSelected($(this));
-    });
-    
-    $('#prev').click(function() {
-        moveToSelected('prev');
-    });
-    
-    $('#next').click(function() {
-        moveToSelected('next');
-    });
-</script>
-</body>
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
 
+      // TO-BE 사진 제거
+      // 이미지 클릭 이벤트 핸들러
+      function handleClick() {
+        this.style.opacity = 0; // 이미지를 클릭했을 때 해당 이미지의 투명도를 0.5로 설정
+      }
+
+      // 이미지 클릭 이벤트 리스너 등록
+      var myImage = document.getElementById("myImage");
+      myImage.addEventListener("click", handleClick);
+    </script>
+  </body>
 </html>

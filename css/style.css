@@ -61,7 +61,7 @@ body {
 }
 
 .img_size {
-  margin-top: 50px;
+  margin-top: 40px;
   border: 10px solid black;
   border-radius: 50%;
   width: 10vw;
@@ -72,7 +72,11 @@ body {
   height: 25vw;
 }
 .img_size3 {
-  width: 50vw;
+  width: 30vw;
+}
+
+.img_size4 {
+  width: 40vw;
 }
 
 a {
@@ -104,31 +108,12 @@ a {
   align-items: center;
 }
 
-/* .box3 {
-  padding-left: 10%;
-  padding-right: 10%;
+.box3 {
+  /* padding-left: 6svw;
+  padding-right: 10vw; */
   position: relative;
   display: flex;
   justify-content: space-between;
-}
-.box3 .card {
-  position: relative;
-  cursor: pointer;
-}
-
-@media (max-width: 900px) {
-  .box3 {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-} */
-
-.box3 {
-  padding-left: 10%;
-  padding-right: 10%;
-  position: relative;
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -147,9 +132,10 @@ a {
   .box3 .card {
     width: auto;
     flex-basis: calc(50% - 20px);
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 3%;
+    margin-right: 3%; */
     margin-bottom: 0;
+    padding-left: 3vw;
   }
 
   .box3 .card:nth-child(even) {
@@ -424,12 +410,36 @@ a {
   border-radius: 10px;
   animation: slideIn 0.5s ease-in;
 }
+.modal-content-1 {
+  background-image: url("/images/surf.jpg");
+  background-size: cover;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+  animation: slideIn 0.5s ease-in;
+}
+.modal-content-2 {
+  background-image: url("/images/boarding.JPG");
+  background-size: cover;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+  animation: slideIn 0.5s ease-in;
+}
 .modal-content2 {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 60%;
+  width: 40%;
   border-radius: 10px;
   animation: slideIn 0.5s ease-in;
 }
@@ -439,6 +449,28 @@ a {
   padding: 20px;
   border: 1px solid #888;
   width: 60%;
+  border-radius: 10px;
+  animation: slideIn 0.5s ease-in;
+}
+.modal-content4 {
+  background-image: url("/images/five.png");
+  background-size: cover;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  animation: slideIn 0.5s ease-in;
+}
+.modal-content5 {
+  background-image: url("/images/ten.jpeg");
+  background-size: cover;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: 60%;
   border-radius: 10px;
   animation: slideIn 0.5s ease-in;
 }
@@ -466,83 +498,60 @@ a {
   cursor: pointer;
 }
 
-/* carousel css */
+/* caroasal */
+/* * {
+  box-sizing: border-box;
+} */
 
-#carousel {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
-  height: 400px;
-  top: 50%;
-  transform: translateY(-50%);
-  overflow: hidden;
-}
-#carousel div {
-  position: absolute;
-  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
-  opacity: 1;
-}
-#carousel div img {
-  width: 400px;
-  transition: width 1s;
-}
-#carousel div.hideLeft {
-  left: 0%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-}
-#carousel div.hideLeft img {
-  width: 200px;
-}
-#carousel div.hideRight {
-  left: 100%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-}
-#carousel div.hideRight img {
-  width: 200px;
-}
-#carousel div.prev {
-  z-index: 5;
-  left: 30%;
-  transform: translateY(50px) translateX(-50%);
-}
-#carousel div.prev img {
-  width: 300px;
-}
-#carousel div.prevLeftSecond {
-  z-index: 4;
-  left: 15%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-}
-#carousel div.prevLeftSecond img {
-  width: 200px;
-}
-#carousel div.selected {
-  z-index: 10;
-  left: 50%;
-  transform: translateY(0px) translateX(-50%);
-}
-#carousel div.next {
-  z-index: 5;
-  left: 70%;
-  transform: translateY(50px) translateX(-50%);
-}
-#carousel div.next img {
-  width: 300px;
-}
-#carousel div.nextRightSecond {
-  z-index: 4;
-  left: 85%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-}
-#carousel div.nextRightSecond img {
-  width: 200px;
+  margin: auto;
 }
 
-.buttons {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10px;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
